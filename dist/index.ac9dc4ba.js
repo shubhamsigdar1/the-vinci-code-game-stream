@@ -605,18 +605,12 @@ class Game {
                 console.log("Will Show Leaderboard Now...");
                 break;
             case "3":
-                this.name = prompt("Enter name to be updated:") || "Guest";
+                this.name = prompt("Enter name to be updated:") || this.name;
                 this.displayMenu();
         }
     }).bind(this);
     displayMenu() {
-        this.container.innerHTML = `Welcome ${this.name},
-    <ol>
-      <li data-val="1">Start New Game</li>
-      <li data-val="2">See Leaderboard</li>
-      <li data-val="3">Update Name</li>
-    </ol>`;
-        this.container.removeEventListener("click", this.handleMenuClick);
+        document.querySelector(".username").innerText = `${this.name}`;
         this.container.addEventListener("click", this.handleMenuClick);
     }
     updateLevel(level = 1) {
@@ -655,6 +649,7 @@ class Game {
 }
 let myGameInstance = new Game(myGameContainer);
 myGameInstance.start();
+document.querySelector(".fa-pen-to-square").addEventListener("click", myGameInstance.handleMenuClick);
 
 },{"./styles.css":"lW6qc"}],"lW6qc":[function() {},{}]},["iZQ9B","aR1JP"], "aR1JP", "parcelRequirebaba")
 

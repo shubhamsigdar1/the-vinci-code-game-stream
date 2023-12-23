@@ -1,5 +1,104 @@
-body {
-  font-family: sans-serif;
+html, body {
+  box-sizing: border-box;
+  background-color: #50d673;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: SF Pro Text, -apple-system, Source Sans Pro, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 16px;
+}
+
+header {
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8%;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo h1 {
+  color: #2d4884;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.username-container {
+  color: #2d4884;
+  align-items: center;
+  padding-right: 5%;
+  display: flex;
+}
+
+.fa-pen-to-square {
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.start-menu {
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.game-name {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.game-description {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.game {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  display: flex;
+}
+
+.play-Btn {
+  color: #333;
+  cursor: pointer;
+  background-color: #ffd154;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 32px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background .1s;
+}
+
+.play-Btn:hover {
+  background-color: #fff;
+}
+
+.leaderboard {
+  width: 10%;
+  transition: background .1s;
+}
+
+.leaderboard img {
+  width: 100%;
+}
+
+@media (width <= 900px) {
+  .logo h1 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
