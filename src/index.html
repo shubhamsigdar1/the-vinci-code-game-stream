@@ -28,6 +28,40 @@
           </div>
         </div>
      </div>
+     <div class="show-num-screen hide" id="show-num-screen">
+      <div class="number" id="numb"></div>
+      <div class="timer-lines">
+          <div class="bcktimer"></div>
+          <div id="frttimer" class="frttimer"></div>
+      </div>
+     </div>
+     <div class="enter-showed-num hide" id="enter-showed-num">
+            <div class="question">
+                <h2>Enter all number without space in input</h2>
+            </div>
+            <div class="press-enter">
+                <span>Press enter to submit</span>
+            </div>
+            <div class="input-field-container">
+                <input
+                    type="text"
+                    class="input-seen-num"
+                    id="input-seen-num"
+                    autocomplete="off"
+                    autofocus
+                />
+            </div>
+            <button class="submit-btn" id="submit-btn">Submit</button>
+        </div>
+        <div class="show-result hide">
+          <h1 id="result" class="result">
+             Your Score is: <span class="score"></span>
+          </h1>
+          <div class="start-again">
+              <button class="see-leaderboard" data-val="2">See leaderboard</button>
+              <button class="play-again" data-val="1">Play Again</button>
+          </div>
+      </div>
     <script src="./index.mjs" type="module"></script>
   </body>
 </html>

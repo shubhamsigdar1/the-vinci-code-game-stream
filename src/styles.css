@@ -58,6 +58,9 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
+.start-menu.hide {
+  display: none;
+}
 
 .game-name {
   color: #fff;
@@ -106,6 +109,137 @@ header {
 
 .leaderboard img {
   width: 100%;
+}
+
+.show-num-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  height: 70%;
+}
+.number {
+  font-size: 100px;
+  color: #fff;
+}
+
+.bcktimer {
+  background: #224061;
+  height: 2px;
+  width: 120px;
+}
+#frttimer {
+  background-color: #fff;
+  height: 2px;
+  width: 120px;
+  position: absolute;
+  transform: translateY(-2px);
+  transition: 0.06s;
+}
+.show-num-screen.hide {
+  display: none;
+}
+
+.timer-lines.hide {
+  display: none;
+}
+
+.enter-showed-num {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  height: 70%;
+}
+.enter-showed-num.hide {
+  display: none;
+}
+.question h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+.question {
+  padding-bottom: 3px;
+  text-align: center;
+}
+.press-enter {
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  padding-bottom: 26px;
+  text-align: center;
+}
+.submit-btn {
+  margin-top: 32px;
+  background-color: #ffd154;
+  padding: 12px 30px;
+  border: none;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.submit-btn:hover {
+  background-color: #fff;
+}
+.input-field-container {
+  max-width: 950px;
+  margin-right: 20px;
+}
+
+.input-seen-num {
+  width: 100%;
+
+  background: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+.input-seen-num:focus {
+  outline: none !important;
+  border: solid 3px #54a2dd;
+}
+
+.show-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  gap: 5%;
+}
+
+.show-result.hide {
+  display: none;
+}
+
+.start-again {
+  display: flex;
+  justify-content: space-around;
+}
+
+.start-again button {
+  border-radius: 3px;
+  margin: 0 10px;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffd154;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+}
+
+.start-again button:hover {
+  background-color: #fff;
 }
 
 @media (max-width: 900px) {
