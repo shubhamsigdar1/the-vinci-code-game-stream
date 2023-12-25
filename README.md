@@ -1,6 +1,8 @@
 **Description**
 
 - Fix UI of first page
+- Fix UI of showing random number
+- Fix UI of showing result
 
 **After change video:**
 
