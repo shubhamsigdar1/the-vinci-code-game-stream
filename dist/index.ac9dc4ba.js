@@ -655,7 +655,16 @@ class Game {
     }
     getNumbersFromUser() {
         this.submitBtn.addEventListener("click", ()=>{
-            if (this.inputField.value.replace(/\s/g, "").length != 0) this.verifyLevel();
+            if (this.inputField.value.replace(/\s/g, "").length != 0) {
+                if (this.verifyLevel()) {
+                    this.updateLevel(this.level + 1);
+                    this.gameLoop();
+                } else {
+                    document.querySelector(".show-result").classList.remove("hide");
+                    document.querySelector(".score").innerText = `${this.level}`;
+                    document.querySelector(".play-again").addEventListener("click", this.handleMenuClick);
+                }
+            }
         });
         this.inputField.addEventListener("keypress", (e)=>{
             if (this.inputField.value.replace(/\s/g, "").length != 0 && e.key === "Enter") {
